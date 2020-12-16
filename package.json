@@ -1,0 +1,40 @@
+{
+  "name": "mern-tinder-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "scripts": {
+    "serve": "node index.js ",
+    "client": "npm run start --prefix client",
+    "clean": "killall -9 node",
+    "dev": "concurrently \"npm run serve\" \"npm run client\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "react-kakao-login": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "nodemon": "^1.19.1",
+    "prettier": "2.2.1"
+  }
+}
